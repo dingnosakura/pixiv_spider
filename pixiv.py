@@ -98,6 +98,9 @@ def imgdownloader(imglist):
         path=r'pixiv/'
         with open(path+id+'.'+url.split('.')[-1],'wb') as f:
             f.write(r.content)
+username = input('Please input your pixiv username or email')
+password = input('Please input your pixiv password')
+
 login()
 
 imgdownloader(getimgurl())
